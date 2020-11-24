@@ -1,3 +1,295 @@
 body {
     font-family: 'raleway';
+    margin-left: 55px;
+    margin-right: 55px;
 }
+
+a {
+    
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header a {
+    color: #0065FC;
+}
+
+/* logo */
+
+.logo {
+    position: absolute;
+    padding-top: 38px;
+}
+
+.head {
+    flex-direction: row-reverse;
+    display: flex;
+}
+
+/* buttons */
+
+.signin {
+    border: 2px solid white;
+    font-weight: bold;
+    text-align: center;
+    width: 162px;
+    padding-top: 48px;
+    
+}
+
+.heberge {
+    border: 2px solid white;
+    text-align: center;  
+    width: 162px;
+    padding-top: 48px;
+    
+}
+
+.heberge:hover {
+    border-top: 2px solid #0065FC; 
+}
+
+.activite {
+    text-align: center;
+    border: 2px solid white;
+    width: 162px;
+    padding-top: 48px;
+   
+}
+
+.activite:hover {
+    border-top: 2px solid #0065FC; 
+}
+
+/* SEARCH BAR */
+
+.search {
+    display: flex;
+    flex-direction: column;
+    margin-top: 38px;
+}
+
+.search p, h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search p {
+    margin-top: 9px;
+    margin-bottom: 19px;
+}
+
+form {
+    display: flex;
+    width: 420px;
+    height: 49px; 
+}
+
+#search {
+    font-weight: bold;
+    width: 234px;
+    border-style: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    padding-left: 17px;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+#button {
+    width: 134px;
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#label {
+    background-color: #F2F2F2;
+    text-align: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    padding-top: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#search:focus, #button:focus {
+    outline: none;
+}
+
+#button:focus {
+    border: 1px solid #F2F2F2;
+    border-radius: 0px 15px 15px 0px;
+
+}
+
+/* FILTERS */
+
+.filter {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 31px;
+}
+
+.eco, .fami, .roman, .pet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 25px;
+    height: 50px;
+}
+
+.eco{
+    margin-left: 31px;
+    width: 194px; 
+}
+
+.fami {
+    margin-left: 24px;
+    width: 152px;
+}
+
+.roman {
+    margin-left: 24px;
+    width: 184px;
+}
+
+.pet {
+    margin-left: 24px;
+    width: 242px;
+}
+
+.filter .fas {
+    color: #0065FC;
+    margin-right: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 1px solid #DEEBFF;
+    background-color: #DEEBFF;
+    box-shadow: 0px 0px 0px 2px  #DEEBFF;
+}
+
+.pet:hover, .roman:hover, .fami:hover, .eco:hover {
+    background-color: #0065FC;
+}
+
+div.pet:hover a, .roman:hover a, .fami:hover a, .eco:hover a {
+    color: white;
+}
+
+div.pet a, div.roman a, div.fami a, div.eco a{
+    font-weight: bold;
+    color: black;
+}
+
+.info {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.info .fas {
+    font-size: 12px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    color: #0065FC;
+    height: 24px;
+    width: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CARDS */
+
+#hebergements {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 626px;
+    width: 880px;
+    border-radius: 25px;
+    background: #F2F2F2;
+}
+
+.card_hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.a_can {
+    display: flex;
+    position: relative;
+    height: 190px;
+    width: 246px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.a_can_img img {
+    object-position: 0px -40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 25px;
+    
+}
+
+.a_can_sub {
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.stars {
+    flex-direction: row;
+    color: #0065FC;
+   
+}
+
+.empty {
+    color: #F2F2F2;
+}
+
+.a_can_sub h3, p, .stars {
+    margin: 3px;
+    padding: 0px;
+    margin-left: 11px;
+}
+
+.a_can_sub span {
+    font-weight: bold;
+}
+
+.h_can_img img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
