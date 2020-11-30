@@ -24,11 +24,13 @@ header a {
     padding-top: 38px;
 }
 
-.head {
+.head, .mobile_head {
     flex-direction: row-reverse;
     display: flex;
 }
-
+ .mobile_head{
+     width: 20%;
+ }
 /* buttons */
 
 .signin {
@@ -43,7 +45,7 @@ header a {
 .heberge {
     border: 2px solid white;
     text-align: center;  
-    width: 20%;
+    width: 50%;
     padding-top: 48px;
     
 }
@@ -55,7 +57,7 @@ header a {
 .activite {
     text-align: center;
     border: 2px solid white;
-    width: 20%;
+    width: 50%;
     padding-top: 48px;
    
 }
@@ -425,10 +427,11 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 /*#### 1024px ####*/
 
 @media (max-width: 1024px) {
-    .all_cards {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+    /*
+
+    .card_populaires {
+        margin-left: 40px;
+        }*/
 
     .filter {
         flex-wrap: wrap;
@@ -449,6 +452,57 @@ div.pet a, div.roman a, div.fami a, div.eco a{
         margin-right: 3%;
     }
 
+    /**/
+
+    #hebergements h2, p {
+        margin-left: 20px;
+    }
+
+   /* 
+
+    .stonks {
+        margin-left: 20px;
+        margin-right: 20px;
+    }*/
+
+}
+
+/*#### 1023px ####*/  
+
+@media (max-width: 1023px) {
+
+    /*body {
+        margin: 0px;
+    }*/
+
+    /**/
+    .heberge:hover {
+        border-bottom: 2px solid #0065FC; 
+        border-top: none;
+    }
+
+    .activite:hover {
+        border-bottom: 2px solid #0065FC; 
+        border-top: none;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .signin {
+        text-align: end;
+        width: 100%;
+    }
+
+    .mobile_head {
+        width: 100%;
+    }
+
+    .activite, .heberge {
+        width: 50%
+    }
+
     .card_populaires {
         width: 100%;
         margin: 0px;
@@ -464,24 +518,31 @@ div.pet a, div.roman a, div.fami a, div.eco a{
         background-color: transparent;
     }
 
-    #hebergements h2, p {
-        margin-left: 20px;
+    .all_cards {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .card_hebergements {
-        justify-content: center;
+        justify-content: space-evenly;
     }
 
-    .stonks {
-        margin-left: 20px;
-        margin-right: 20px;
+    .all_ca_pop {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
-
 }
 
-/*#### 425px ####*/  
-
 @media (max-width: 425px) {
+
+    .a_can {
+        width: 87%;
+    }
+
+    .ca_pop {
+        width: 87%;
+    }
+
     #button {
         width: 51px;
         border-radius: 14px;
@@ -506,18 +567,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 
     #search {
         border: none;
-    }
-
-    /*body {
-        margin: 0px;
-    }*/
-
-    .a_can {
-        width: 87%;
-    }
-
-    .ca_pop {
-        width: 87%;
     }
 }
 
