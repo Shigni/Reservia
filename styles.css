@@ -1,7 +1,9 @@
+/*#### GLOBAL ####*/
+
 body {
     font-family: 'raleway';
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 a {
@@ -9,7 +11,7 @@ a {
     text-decoration: none;
 }
 
-/* HEADER */
+/*#### HEADER ####*/
 
 header a {
     color: #0065FC;
@@ -33,7 +35,7 @@ header a {
     border: 2px solid white;
     font-weight: bold;
     text-align: center;
-    width: 162px;
+    width: 20%;
     padding-top: 48px;
     
 }
@@ -41,7 +43,7 @@ header a {
 .heberge {
     border: 2px solid white;
     text-align: center;  
-    width: 162px;
+    width: 20%;
     padding-top: 48px;
     
 }
@@ -53,7 +55,7 @@ header a {
 .activite {
     text-align: center;
     border: 2px solid white;
-    width: 162px;
+    width: 20%;
     padding-top: 48px;
    
 }
@@ -62,7 +64,7 @@ header a {
     border-top: 2px solid #0065FC; 
 }
 
-/* SEARCH BAR */
+/*#### SEARCH BAR ####*/
 
 .search {
     display: flex;
@@ -110,6 +112,10 @@ form {
     font-weight: bold;
 }
 
+.find_logo {
+    display: none;
+}
+
 #label {
     background-color: #F2F2F2;
     text-align: center;
@@ -129,13 +135,14 @@ form {
 
 }
 
-/* FILTERS */
+/*#### FILTERS ####*/
 
 .filter {
     align-items: center;
     display: flex;
     flex-direction: row;
     margin-top: 31px;
+   /* flex-wrap: wrap; */
 }
 
 .eco, .fami, .roman, .pet {
@@ -212,11 +219,7 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     justify-content: center;
 }
 
-/* CARDS */
-
-.test {
-    display: inline-flex;
-}
+/*#### CARDS ####*/
 
 #hebergements {
     padding-top: 20px;
@@ -224,7 +227,7 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     padding-left: 40px;
     padding-right: 40px;
     height: 100%;
-    width: 60%;
+    width: 70%;
     border-radius: 25px;
     background: #F2F2F2;
 }
@@ -235,15 +238,21 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     justify-content: space-between;
 }
 
+.all_cards {
+    display: inline-flex;
+}
 
 .a_can {
     display: flex;
     position: relative;
-    height: 180px;
+    height: 190px;
     width: 246px;
     margin-bottom: 53px;
-      
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
 }
+
 
 .a_can a {
     color: black;
@@ -256,28 +265,10 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     left: 0;
     width: 100%;
     height: 100%;
-    border: 5px solid white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-}
-
-.a_can:hover .a_can_img img {
-    border: 5px solid #0065FC;
-}
-
-.a_can:hover .a_can_sub {
-    border-bottom: 5px solid #0065FC;
-    border-left: 5px solid #0065FC;
-    border-right: 5px solid #0065FC;
-    border-top: 5px transparent;
-}
-
-.a_can:hover .a_can_sub h3 {
-    margin-top: 6px;
+    border-radius: 20px 20px 0 0;
 }
 
 .a_can_sub {
-    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -287,8 +278,11 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     height: 70px;
     width: 100%;
     background-color: white;
-    border: 5px solid white;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.a_can:hover {
+    border: 5px solid #0065FC;
 }
 
 .stars {
@@ -329,17 +323,21 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     color: black;
 }
 
+/*#### CARDS POP ####*/
+
 .card_populaires {
     padding-top: 20px;
     padding-left: 39px;
     height: 100%;
-    width: 40%;
+    width: 30%;
     border-radius: 25px;
     background: #F2F2F2;
-    margin-left: 40px;
+    /*margin-left: 40px;*/
     display: flex;
     flex-direction: column;
+    align-content: center;
     padding-right: 40px;
+    padding-bottom: 40px;
 }
 
 .ca_pop {
@@ -348,31 +346,35 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     border: 5px solid white;
     border-radius: 25px;
     box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
-    width: 338px;
+    width: 330px;
     height: 134px;
     margin-bottom: 33px;
 }
 
+.ca_pop:hover {
+    border: 5px solid #0065FC;
+}
+
 .ca_pop_sub {
-    border-radius: 0 25px 25px 0;
+    border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 0;
-    left: 132px;
+    left: 40%;
     height: 134px;
-    width: 211px;
+    width: 60%;
     background-color: white;
 }
 
 .ca_pop_img img {
-    border-radius: 25px 0 0 25px;
+    border-radius: 20px 0 0 20px;
     object-position: -40px 0px;
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
-    height: 134px;
+    height: 133px;
 }
 
 .all_ca_pop {
@@ -392,3 +394,132 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 .stonks .fas {
     font-size: 23px;
 }
+
+.ca_pop_sub h3, p, .stars {
+    margin: 1px;
+    margin-right: 0px;
+    padding: 0px;
+    margin-left: 11px;
+}
+
+.ca_pop_sub .stars {
+   padding-top: 40px;
+}
+
+/*#### 1720px ####*/
+
+@media (min-width: 1720px) {
+    .a_can {
+        width: 316px;
+    }
+}
+
+/*#### +1024px ####*/
+
+@media (min-width: 1025px) {
+    .card_populaires {
+        margin-left: 40px;
+        }
+}
+
+/*#### 1024px ####*/
+
+@media (max-width: 1024px) {
+    .all_cards {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .filter {
+        flex-wrap: wrap;
+        /*flex-direction: column;
+        align-items: flex-start;*/
+    }
+
+    .eco {
+        margin-left: 24px;
+    }
+    
+    body {
+        margin: 0px;
+    }
+
+    header, .search, .filter, .info {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .card_populaires {
+        width: 100%;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 0px;
+    }
+    #hebergements {
+        width: 100%;
+        margin: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: transparent;
+    }
+
+    #hebergements h2, p {
+        margin-left: 20px;
+    }
+
+    .card_hebergements {
+        justify-content: center;
+    }
+
+    .stonks {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
+
+/*#### 425px ####*/  
+
+@media (max-width: 425px) {
+    #button {
+        width: 51px;
+        border-radius: 14px;
+    }
+
+    .find_logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .find {
+        display: none;
+    }
+
+    form {
+        justify-content: space-between;
+        border: 1px solid #F2F2F2;  
+        border-radius: 15px;
+        width: 80%;
+    }
+
+    #search {
+        border: none;
+    }
+
+    /*body {
+        margin: 0px;
+    }*/
+
+    .a_can {
+        width: 87%;
+    }
+
+    .ca_pop {
+        width: 87%;
+    }
+}
+
+/*  Modif header (width sur les links)
+    Refaire les margin et centrer les cards */
