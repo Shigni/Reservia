@@ -1,5 +1,10 @@
 /*#### GLOBAL ####*/
 
+html {
+    max-width: 1920px;
+    margin: auto;
+}
+
 body {
     font-family: 'raleway';
     margin-left: 3%;
@@ -253,6 +258,7 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     border: 5px solid white;
     border-radius: 25px;
     box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    overflow: hidden;
 }
 
 
@@ -304,6 +310,10 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 }
 
 .a_can_sub span {
+    font-weight: bold;
+}
+
+.ca_pop span {
     font-weight: bold;
 }
 
@@ -408,6 +418,118 @@ div.pet a, div.roman a, div.fami a, div.eco a{
    padding-top: 40px;
 }
 
+.activity {
+    width: 100%;
+    height: 100%;
+}
+
+.card_activite {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.port, .box_double_fort, .calanques, .box_double_nd {
+    width: 23%;
+}
+
+.box_double_fort, .box_double_nd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*.port_img img, .box_double_fort img, .calanques img, .box_double_nd img {
+    width: 100%;
+    height: 100%;
+}*/
+
+.port, .calanques {
+    height: 446px;
+}
+
+.fort {
+    height: 237px;
+}
+
+.frioul {
+    height: 166px;
+}
+
+.parc {
+    height: 209px;
+}
+
+.notre-dame {
+    height: 196px;
+}
+
+.port, .fort, .frioul, .calanques, .notre-dame, .parc {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    /*border: 5px solid white;*/
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+}
+
+/*.port_img {
+    align-items: center;
+}
+
+.port_img img {
+    height: 444px;
+    position: absolute;
+    left: -90%; 
+}*/
+
+.notre-dame_img img, .parc_img img, .port_img img, .calanques_img img, .frioul_img img, .fort_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.activity h3 {
+    margin-left: 16px;
+}
+
+.port_sub, .calanques_sub {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 87%;
+    height: 100%;
+}
+
+.fort_sub {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 78%;
+    height: 100%;
+}
+
+.frioul_sub {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 67%;
+    height: 100%;
+}
+
+.notre-dame_sub, .parc_sub {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top:72%;
+    height: 100%;
+}
+
+.port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
+    box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);
+}
+
 /*#### 1720px ####*/
 
 @media (min-width: 1720px) {
@@ -424,9 +546,9 @@ div.pet a, div.roman a, div.fami a, div.eco a{
         }
 }
 
-/*#### 1024px ####*/
+/*#### 1080px ####*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     /*
 
     .card_populaires {
@@ -452,30 +574,15 @@ div.pet a, div.roman a, div.fami a, div.eco a{
         margin-right: 3%;
     }
 
-    /**/
-
-    #hebergements h2, p {
+    #hebergements h2 {
         margin-left: 20px;
-    }
-
-   /* 
+    } 
 
     .stonks {
         margin-left: 20px;
         margin-right: 20px;
-    }*/
+    }
 
-}
-
-/*#### 1023px ####*/  
-
-@media (max-width: 1023px) {
-
-    /*body {
-        margin: 0px;
-    }*/
-
-    /**/
     .heberge:hover {
         border-bottom: 2px solid #0065FC; 
         border-top: none;
@@ -531,6 +638,19 @@ div.pet a, div.roman a, div.fami a, div.eco a{
         flex-direction: row;
         flex-wrap: wrap;
     }
+
+    .port, .box_double_fort, .calanques, .box_double_nd {
+        width: 40%;
+    }
+
+    .port, .box_double_fort {
+        margin-bottom: 22px;
+    }
+
+    .card_activite {
+        justify-content: space-evenly;
+    }
+
 }
 
 @media (max-width: 425px) {
@@ -570,5 +690,47 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     }
 }
 
-/*  Modif header (width sur les links)
-    Refaire les margin et centrer les cards */
+@media (max-width: 333px) {
+    .ca_pop_sub .stars {
+    padding-top: 0px;
+    }
+
+    .ca_pop_sub h3 {
+        font-size: 17px;
+    }
+
+    .a_can_sub h3 {
+        font-size: 17px;
+    }
+
+    .activity h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 511px) {
+    .port, .box_double_fort, .calanques, .box_double_nd {
+        width: 90%;
+    }
+
+    .port, .fort, .frioul, .calanques, .notre-dame, .parc {
+        margin-bottom: 22px;
+        height: 190px;
+    }
+
+    .port_sub, .fort_sub, .frioul_sub, .calanques_sub, .notre-dame_sub, .parc_sub {
+        top: 70%;
+    }
+
+    .box_double_fort {
+        margin: 0px;
+    }
+
+    .a_can {
+        width: 87%;
+    }
+
+    .ca_pop {
+        width: 87%;
+    }
+}
