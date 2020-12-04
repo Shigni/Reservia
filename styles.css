@@ -23,8 +23,12 @@ a {
 
 /*#### HEADER ####*/
 
-header a {
+.signin a, .heberge a {
     color: #0065FC;
+}
+
+.activite a {
+    color: black;
 }
 
 /* logo */
@@ -41,6 +45,7 @@ header a {
  .mobile_head{
      width: 20%;
  }
+
 /* buttons */
 
 .signin {
@@ -49,7 +54,6 @@ header a {
     text-align: center;
     width: 20%;
     padding-top: 48px;
-    
 }
 
 .heberge {
@@ -57,11 +61,7 @@ header a {
     text-align: center;  
     width: 50%;
     padding-top: 48px;
-    
-}
-
-.heberge:hover {
-    border-top: 2px solid #0065FC; 
+    border-top: 2px solid #0065FC;
 }
 
 .activite {
@@ -69,11 +69,7 @@ header a {
     border: 2px solid white;
     width: 50%;
     padding-top: 48px;
-   
-}
-
-.activite:hover {
-    border-top: 2px solid #0065FC; 
+    color: black;
 }
 
 /*#### SEARCH BAR ####*/
@@ -266,19 +262,20 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     overflow: hidden;
 }
 
-
 .a_can a {
     color: black;
 }
 
 .a_can_img img {
-    object-position: 0px -40px;
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.a_can_img {
+    width: 100%;
+    height: 119px;
+    display: flex;
 }
 
 .a_can_sub {
@@ -322,13 +319,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     font-weight: bold;
 }
 
-.h_can_img img {
-    width: 100%;
-    height: 100%;
-    border: 5px solid white;
-    border-radius: 25px;
-}
-
 .afficher {
     font-weight: bold;
     color: black;
@@ -349,7 +339,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     width: 30%;
     border-radius: 25px;
     background: #F2F2F2;
-    /*margin-left: 40px;*/
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -366,6 +355,10 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     width: 330px;
     height: 134px;
     margin-bottom: 33px;
+}
+
+.ca_pop a {
+    color: black;
 }
 
 .ca_pop:hover {
@@ -385,13 +378,16 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 }
 
 .ca_pop_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px 0 0 20px;
-    object-position: -40px 0px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 133px;
+}
+
+.ca_pop_img {
+    width: 40%;
+    height: 134px;
+    display: flex;
 }
 
 .all_ca_pop {
@@ -423,7 +419,9 @@ div.pet a, div.roman a, div.fami a, div.eco a{
    padding-top: 40px;
 }
 
-.activity {
+/*#### ACTIVITE ####*/
+
+#activity {
     width: 100%;
     height: 100%;
 }
@@ -434,12 +432,9 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     flex-wrap: wrap;
 }
 
-
 .port, .box_double_fort, .calanques, .box_double_nd {
     width: 23%;
 }
-
-
 
 .box_double_fort, .box_double_nd {
     display: flex;
@@ -447,10 +442,14 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     justify-content: space-between;
 }
 
-/*.port_img img, .box_double_fort img, .calanques img, .box_double_nd img {
+.liens {
     width: 100%;
+    color: black;
+}
+
+.port_img, .fort_img, .frioul_img, .calanques_img, .notre-dame_img, .parc_img {
     height: 100%;
-}*/
+}
 
 .port, .calanques {
     height: 446px;
@@ -476,7 +475,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     overflow: hidden;
     position: relative;
     display: flex;
-    /*border: 5px solid white;*/
     border-radius: 25px;
     box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
 }
@@ -487,45 +485,38 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     height: 100%;
 }
 
-.activity h3 {
+#activity h3 {
     margin-left: 16px;
 }
 
-.port_sub, .calanques_sub {
+.port_sub, .calanques_sub, .fort_sub, .frioul_sub, .notre-dame_sub, .parc_sub {
     position: absolute;
     background-color: white;
     width: 100%;
-    top: 87%;
     height: 100%;
+}
+
+.port_sub, .calanques_sub {
+    top: 87%;
 }
 
 .fort_sub {
-    position: absolute;
-    background-color: white;
-    width: 100%;
     top: 78%;
-    height: 100%;
 }
 
 .frioul_sub {
-    position: absolute;
-    background-color: white;
-    width: 100%;
     top: 67%;
-    height: 100%;
 }
 
 .notre-dame_sub, .parc_sub {
-    position: absolute;
-    background-color: white;
-    width: 100%;
     top:72%;
-    height: 100%;
 }
 
 .port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
     box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);
 }
+
+/*#### FOOTER ####*/
 
 footer {
     background-color: #F2F2F2;
@@ -575,16 +566,9 @@ footer a {
 /*#### 1080px ####*/
 
 @media (max-width: 1080px) {
-    /*
-
-    .card_populaires {
-        margin-left: 40px;
-        }*/
 
     .filter {
         flex-wrap: wrap;
-        /*flex-direction: column;
-        align-items: flex-start;*/
     }
 
     .eco {
@@ -595,7 +579,11 @@ footer a {
         margin: 0px;
     }
 
-    header, .search, .filter, .info {
+    section {
+        margin: 0px;
+    }
+
+    .search, .filter, .info {
         margin-left: 3%;
         margin-right: 3%;
     }
@@ -607,33 +595,6 @@ footer a {
     .stonks {
         margin-left: 20px;
         margin-right: 20px;
-    }
-
-    .heberge:hover {
-        border-bottom: 2px solid #0065FC; 
-        border-top: none;
-    }
-
-    .activite:hover {
-        border-bottom: 2px solid #0065FC; 
-        border-top: none;
-    }
-
-    .head {
-        flex-direction: column;
-    }
-
-    .signin {
-        text-align: end;
-        width: 100%;
-    }
-
-    .mobile_head {
-        width: 100%;
-    }
-
-    .activite, .heberge {
-        width: 50%
     }
 
     .card_populaires {
@@ -677,15 +638,15 @@ footer a {
         justify-content: space-evenly;
     }
 
+    .a_can, .ca_pop {
+        margin-right: 7px;
+        margin-left: 7px;
+    }
 }
 
 @media (max-width: 425px) {
 
-    .a_can {
-        width: 87%;
-    }
-
-    .ca_pop {
+    .a_can, .ca_pop {
         width: 87%;
     }
 
@@ -708,11 +669,13 @@ footer a {
         justify-content: space-between;
         border: 1px solid #F2F2F2;  
         border-radius: 15px;
-        width: 80%;
+        width: 100%;
     }
 
     #search {
         border: none;
+        width: 60%;
+        padding-left: 0px;
     }
 }
 
@@ -734,7 +697,13 @@ footer a {
     }
 }
 
-@media (max-width: 511px) {
+@media (max-width: 812px) {
+    .a_can {
+        width: 40%;
+    }
+}
+
+@media (max-width: 541px) {
     .port, .box_double_fort, .calanques, .box_double_nd {
         width: 90%;
     }
@@ -752,11 +721,48 @@ footer a {
         margin: 0px;
     }
 
-    .a_can {
+    .a_can, .ca_pop {
         width: 87%;
     }
 
-    .ca_pop {
-        width: 87%;
+    .heberge {
+        border-bottom: 3px solid #0065FC; 
+        border-top: none;
+    }
+
+    .activite {
+        border-bottom: 3px solid #F2F2F2; 
+        border-top: none;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .signin {
+        text-align: end;
+        width: 100%;
+    }
+
+    .mobile_head {
+        width: 100%;
+    }
+
+    .activite, .heberge {
+        width: 50%
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .about, .nos_hebergements {
+        margin-bottom: 20px;
+    }
+    
+    .footer div {
+        width: 100%;
     }
 }
