@@ -7,12 +7,17 @@ html {
 
 body {
     font-family: 'raleway';
+    /*margin-left: 3%;
+    margin-right: 3%;*/
+    margin: 0px;
+}
+
+header, section {
     margin-left: 3%;
     margin-right: 3%;
 }
 
-a {
-    
+a { 
     text-decoration: none;
 }
 
@@ -434,6 +439,8 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     width: 23%;
 }
 
+
+
 .box_double_fort, .box_double_nd {
     display: flex;
     flex-direction: column;
@@ -473,16 +480,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     border-radius: 25px;
     box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
 }
-
-/*.port_img {
-    align-items: center;
-}
-
-.port_img img {
-    height: 444px;
-    position: absolute;
-    left: -90%; 
-}*/
 
 .notre-dame_img img, .parc_img img, .port_img img, .calanques_img img, .frioul_img img, .fort_img img {
     object-fit: cover;
@@ -528,6 +525,35 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 
 .port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
     box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);
+}
+
+footer {
+    background-color: #F2F2F2;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 35px;
+}
+
+.about, .nos_hebergements, .assistance {
+   width: 33%; 
+}
+
+footer li {
+    margin-top: 15px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: black;
 }
 
 /*#### 1720px ####*/
