@@ -562,6 +562,8 @@ footer a {
     color: black;
 }
 
+/*#### MEDIA ####*/
+
 /*#### 1720px ####*/
 
 @media (min-width: 1720px) {
@@ -650,6 +652,8 @@ footer a {
     }
 }
 
+/*#### 425px ####*/
+
 @media (max-width: 425px) {
 
     .a_can, .ca_pop {
@@ -693,6 +697,8 @@ footer a {
     }
 }
 
+/*#### 333px ####*/
+
 @media (max-width: 333px) {
     .ca_pop_sub .stars {
     padding-top: 0px;
@@ -711,11 +717,15 @@ footer a {
     }
 }
 
+/*#### 812px ####*/
+
 @media (max-width: 812px) {
     .a_can {
         width: 40%;
     }
 }
+
+/*#### 541px ####*/
 
 @media (max-width: 541px) {
     .port, .box_double_fort, .calanques, .box_double_nd {
@@ -769,6 +779,8 @@ footer a {
     }
 
 }
+
+/*#### 768px ####*/
 
 @media (max-width: 768px) {
     footer {
