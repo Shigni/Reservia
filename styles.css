@@ -2,6 +2,7 @@
 
 html {
     max-width: 1920px;
+    min-width: 280px;
     margin: auto;
 }
 
