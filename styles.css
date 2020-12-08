@@ -12,7 +12,7 @@ body {
     margin: 0px;
 }
 
-header, section {
+.logo, .signin, section, .info {
     margin-left: 3%;
     margin-right: 3%;
 }
@@ -592,7 +592,7 @@ footer a {
         margin: 0px;
     }
 
-    section {
+    section, .info {
         margin: 0px;
     }
 
@@ -767,7 +767,7 @@ footer a {
 
     .signin {
         text-align: end;
-        width: 100%;
+        width: 90%;
     }
 
     .mobile_head {
