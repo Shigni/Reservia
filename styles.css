@@ -464,7 +464,9 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 
 .port_img, .fort_img, .frioul_img, .calanques_img, .notre-dame_img, .parc_img {
     height: 100%;
+   
 }
+
 
 .port, .calanques {
     height: 446px;
@@ -500,6 +502,19 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     height: 100%;
 }
 
+.port:hover::before, .fort:hover::before, .frioul:hover::before, .calanques:hover::before, .notre-dame:hover::before, .parc:hover::before {
+    content: '';
+    border: 5px solid #0065FC;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    overflow: hidden;
+    z-index: 1;
+} 
+
 #activity h3 {
     margin-left: 16px;
 }
@@ -527,9 +542,11 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     top:72%;
 }
 
-.port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
+/*.port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
     box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);
-}
+    -webkit-box-sizing: border-box;
+    outline: 5px solid rgba(0,101,252,1);
+}*/
 
 /*#### FOOTER ####*/
 
