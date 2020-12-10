@@ -147,9 +147,6 @@ form {
 /*#### FILTERS ####*/
 
 .filter {
-   /* align-items: center;
-    display: flex;
-    flex-direction: row;*/
     margin-top: 21px; 
     flex-wrap: wrap;
 }
@@ -222,6 +219,8 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     color: black;
 }
 
+/*#### INFOS ####*/
+
 .info {
     display: flex;
     margin-bottom: 20px;
@@ -240,7 +239,7 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     justify-content: center;
 }
 
-/*#### CARDS ####*/
+/*#### CARDS HEBE ####*/
 
 #hebergements {
     padding-top: 20px;
@@ -332,6 +331,8 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     font-weight: bold;
 }
 
+/*#### AFFICHER PLUS ####*/
+
 .afficher {
     font-weight: bold;
     color: black;
@@ -413,8 +414,7 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 .stonks {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
 
 .stonks .fas {
@@ -462,7 +462,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
 
 .port_img, .fort_img, .frioul_img, .calanques_img, .notre-dame_img, .parc_img {
     height: 100%;
-   
 }
 
 
@@ -540,12 +539,6 @@ div.pet a, div.roman a, div.fami a, div.eco a{
     top:72%;
 }
 
-/*.port:hover, .fort:hover, .frioul:hover, .calanques:hover, .notre-dame:hover, .parc:hover {
-    box-shadow: 0px 0px 0px 5px rgba(0,101,252,1);
-    -webkit-box-sizing: border-box;
-    outline: 5px solid rgba(0,101,252,1);
-}*/
-
 /*#### FOOTER ####*/
 
 footer {
@@ -557,7 +550,6 @@ footer {
     padding-top: 30px;
     padding-left: 50px;
     padding-bottom: 35px;
-    /*max-width: 100%;*/
 }
 
 .about, .nos_hebergements, .assistance {
@@ -576,6 +568,12 @@ footer ul {
 
 footer a {
     color: black;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 0px;
 }
 
 /*#### MEDIA ####*/
