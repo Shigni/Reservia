@@ -53,14 +53,13 @@ a {
     border: 2px solid white;
     font-weight: bold;
     text-align: center;
-    width: 20%;
     padding-top: 48px;
+    margin-left: 60px;
 }
 
 .heberge {
     border: 2px solid white;
     text-align: center;  
-    width: 50%;
     padding-top: 48px;
     border-top: 2px solid #0065FC;
     margin-right: 30px;
@@ -69,7 +68,6 @@ a {
 .activite {
     text-align: center;
     border: 2px solid white;
-    width: 50%;
     padding-top: 48px;
     color: black;
     margin-left: 30px;
@@ -786,6 +784,7 @@ footer a {
     .signin {
         text-align: end;
         width: 90%;
+        margin-left: 3%;
     }
 
     .mobile_head {
