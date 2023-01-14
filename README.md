@@ -9,7 +9,7 @@ Html/css - maquette fournie - Front-end
 
 ## Demo
 
-https://shigni.github.io/Louisservant_2_19112020/
+https://shigni.github.io/Reservia/
 
 
 ## Authors
